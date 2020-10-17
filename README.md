@@ -2,6 +2,7 @@
 
 Build commands
 
-'''go build'''
+```go build
 
-'''./TestCode'''
+   ./TestCode
+```
