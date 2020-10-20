@@ -16,7 +16,10 @@ var array [2 * k_x_axis_max][2 * k_y_axis_max]Point
 var count int
 
 func main() {
-	count = 0
+	// Count starts at 1 due to the first position the 
+	// robot tries is (0, 0) which is safe
+	// If count is 0 then it will miss its first point
+	count = 1
 	array[k_x_axis_max][k_y_axis_max].Visited = true
 	CheckPoints(0, 0)
 	fmt.Println("Total Area Points: " + strconv.Itoa(count))
